@@ -7,14 +7,15 @@ public class ScrollsAI {
 		state.captureScreen();
 		
 		while(!state.isGameOver()) {
+			//determine boardstate
 			state.update();
+			//sacrifice
+			//cast spells
+			//move units
+			//deploy units
 		}
 	}
 	
 	
-		//determine boardstate
-		//sacrifice
-		//cast spells
-		//move units
-		//deploy units
+		
 }

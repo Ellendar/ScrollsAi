@@ -6,4 +6,5 @@ import com.gmail.ellendar.scrollsai.Point;
 public interface TargetingStrategy {
 	
 	public Point getTarget(GameState state);
+	
 }
