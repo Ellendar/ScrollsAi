@@ -2,7 +2,7 @@ package com.gmail.ellendar.scrollsai.sacrifice;
 
 public class Sacrifice {
 	enum Type {
-		MANA, SCROLLS, SKIP;
+		RAMP, DRAW, SKIP;
 	}
 	
 	private Type type;

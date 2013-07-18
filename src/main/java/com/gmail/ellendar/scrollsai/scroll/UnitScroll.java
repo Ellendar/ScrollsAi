@@ -4,6 +4,7 @@ import com.gmail.ellendar.scrollsai.GameState;
 import com.gmail.ellendar.scrollsai.GameStateViolationException;
 import com.gmail.ellendar.scrollsai.Point;
 import com.gmail.ellendar.scrollsai.Unit;
+import com.gmail.ellendar.scrollsai.targetingstrategy.DefaultUnitDeploymentStrategy;
 
 /**
  * Dumb unit scroll implementation. For now they're just power, toughness, and delay on a card. Maybe more subtleness later.
@@ -58,8 +59,8 @@ public class UnitScroll extends TargetedScroll {
 	}
 
 	@Override
-	Point getTarget() {
-		return new DefaultUnitDeploymentStrategy();
+	public Point getTarget(GameState state) {
+		return new DefaultUnitDeploymentStrategy().getTarget(state);
 	}
 
 	@Override

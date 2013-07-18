@@ -1,6 +1,8 @@
 package com.gmail.ellendar.scrollsai.sacrifice;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import com.gmail.ellendar.scrollsai.GameState;
 import com.gmail.ellendar.scrollsai.sacrifice.Sacrifice.Type;
@@ -20,16 +22,59 @@ import com.gmail.ellendar.scrollsai.scroll.Scroll;
 public class DefaultSacrificeStrategy implements SacrificeStrategy {
 	
 	private static final int INITIAL_RAMP_THRESHOLD = 3;
+	
+	private static final int POSITIVE_SACRIFICE_PRIORITY_THRESHOLD = 2;
+	private static final int NEGATIVE_SACRIFICE_PRIORITY_THRESHOLD = -1;
+	
+	private static final Random random = new Random();
 
-	@Override
 	public Sacrifice determineSacrifice(GameState state) {
 		List<Scroll> hand = state.getHand();
 		
 		//are we drawing or ramping?
 		Type type;
 		if(hand.size() == 0) {
-			type = Type.SKIP;
+			return new Sacrifice(Type.SKIP, -1);
 		}
+		else if(hand.size() == 1) {
+			type = Type.DRAW;
+		}
+		else if(state.getMaxMana() < INITIAL_RAMP_THRESHOLD) {
+			type = Type.RAMP;
+		}
+		else if(handContainsCost(hand, state.getMaxMana() + 1)) {
+			type = Type.RAMP;
+		}
+		else {
+			type = Type.DRAW;
+		}
+		
+		//which card are we sacrificing
+		List<Scroll> sacrificeCandidates = new ArrayList<Scroll>();
+		
+		for(Scroll scroll : hand) {
+			if(scroll.getCost() < state.getMaxMana() + NEGATIVE_SACRIFICE_PRIORITY_THRESHOLD) {
+				sacrificeCandidates.add(scroll);
+			}
+			else if(scroll.getCost() > state.getMaxMana() + POSITIVE_SACRIFICE_PRIORITY_THRESHOLD) {
+				sacrificeCandidates.add(scroll);
+			}
+		}
+		
+		if(sacrificeCandidates.isEmpty()) {
+			sacrificeCandidates = hand;
+		}
+		
+		//a random card from the candidate set
+		return new Sacrifice(type, hand.indexOf(sacrificeCandidates.get(random.nextInt(sacrificeCandidates.size()))));
 	}
 
+	private boolean handContainsCost(List<Scroll> hand, int cost) {
+		for(Scroll scroll : hand) {
+			if(scroll.getCost() == cost) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
