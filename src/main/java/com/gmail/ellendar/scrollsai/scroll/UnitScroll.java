@@ -11,7 +11,7 @@ import com.gmail.ellendar.scrollsai.targetingstrategy.DefaultUnitDeploymentStrat
  * @author Ellendar
  *
  */
-public class UnitScroll extends TargetedScroll {
+public class UnitScroll extends Scroll {
 	
 	private int initPower;
 	private int initToughness;
@@ -64,8 +64,13 @@ public class UnitScroll extends TargetedScroll {
 	}
 
 	@Override
-	boolean targetsEnemy() {
+	public boolean targetsEnemy() {
 		return false;
+	}
+
+	@Override
+	public boolean isTargeted() {
+		return true;
 	}
 	
 }

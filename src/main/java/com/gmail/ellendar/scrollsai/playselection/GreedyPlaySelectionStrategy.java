@@ -17,6 +17,7 @@ public class GreedyPlaySelectionStrategy implements PlaySelectionStrategy {
 
 	@Override
 	public List<Scroll> selectPlays(GameState state) {
+		List<Scroll> plays = new ArrayList<Scroll>();
 		List<Scroll> hand = new ArrayList<Scroll>(state.getHand());
 		
 		Collections.sort(hand, new Comparator<Scroll>() {
@@ -28,5 +29,17 @@ public class GreedyPlaySelectionStrategy implements PlaySelectionStrategy {
 		});
 		
 		int remainingMana = state.getMaxMana();
+		for(Scroll scroll : hand) {
+			//if we can cast the scroll
+			if(scroll.getCost() <= remainingMana) {
+				//if the scroll has a legal targret
+				if(!scroll.isTargeted() || scroll.getTarget(state) != null) {
+					plays.add(scroll);
+					remainingMana -= scroll.getCost();
+				}
+			}
+		}
+		
+		return plays;
 	}
 }

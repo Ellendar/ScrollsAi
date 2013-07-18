@@ -24,11 +24,17 @@ public abstract class Scroll {
 	}
 
 	public abstract boolean isUnit();
+	
+	public abstract boolean isTargeted();
+	
+	public abstract Point getTarget(GameState state);
+	
+	public abstract boolean targetsEnemy();
 
 
 	/**
-	 * If this is a unit card, deploy it to the target coordinates.
-	 * If it's a spell card, cast it targeting the cell
+	 * If this is a unit scroll, deploy it to the target coordinates.
+	 * If it's a spell scroll, cast it targeting the cell
 	 * @param state Current game state
 	 * @param targetX X coordinate of the target/deployment cell
 	 * @param targetY Y coordinate of the target/deployment cell
