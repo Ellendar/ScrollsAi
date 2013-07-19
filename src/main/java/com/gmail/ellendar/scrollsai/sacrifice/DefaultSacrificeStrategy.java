@@ -34,7 +34,7 @@ public class DefaultSacrificeStrategy implements SacrificeStrategy {
 		//are we drawing or ramping?
 		Type type;
 		if(hand.size() == 0) {
-			return new Sacrifice(Type.SKIP, -1);
+			return new Sacrifice(Type.SKIP, null);
 		}
 		else if(hand.size() == 1) {
 			type = Type.DRAW;
@@ -66,7 +66,7 @@ public class DefaultSacrificeStrategy implements SacrificeStrategy {
 		}
 		
 		//a random card from the candidate set
-		return new Sacrifice(type, hand.indexOf(sacrificeCandidates.get(random.nextInt(sacrificeCandidates.size()))));
+		return new Sacrifice(type, sacrificeCandidates.get(random.nextInt(sacrificeCandidates.size())));
 	}
 
 	private boolean handContainsCost(List<Scroll> hand, int cost) {

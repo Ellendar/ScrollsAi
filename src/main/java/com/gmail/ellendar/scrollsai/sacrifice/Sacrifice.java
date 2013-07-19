@@ -1,14 +1,16 @@
 package com.gmail.ellendar.scrollsai.sacrifice;
 
+import com.gmail.ellendar.scrollsai.scroll.Scroll;
+
 public class Sacrifice {
-	enum Type {
+	public enum Type {
 		RAMP, DRAW, SKIP;
 	}
 	
 	private Type type;
-	private int scroll;
+	private Scroll scroll;
 	
-	public Sacrifice(Type type, int scroll) {
+	public Sacrifice(Type type, Scroll scroll) {
 		this.scroll = scroll;
 		this.type = type;
 	}
@@ -17,7 +19,7 @@ public class Sacrifice {
 		return type;
 	}
 
-	public int getScroll() {
+	public Scroll getScroll() {
 		return scroll;
 	}
 

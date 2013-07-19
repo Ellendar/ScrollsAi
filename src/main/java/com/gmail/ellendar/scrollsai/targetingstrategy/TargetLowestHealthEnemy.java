@@ -19,8 +19,8 @@ public class TargetLowestHealthEnemy implements TargetingStrategy {
 		for(int x = 0; x < 3; x++) {
 			for(int y = 0; y < 5; y++) {
 				if(grid[x][y] != null) {
-					if(grid[x][y].health < lowestHealth) {
-						lowestHealth = grid[x][y].health;
+					if(grid[x][y].getHealth() < lowestHealth) {
+						lowestHealth = grid[x][y].getHealth();
 						target = new Point(x,y);
 					}
 				}

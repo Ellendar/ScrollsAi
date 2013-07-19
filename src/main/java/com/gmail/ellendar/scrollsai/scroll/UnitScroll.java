@@ -15,21 +15,21 @@ public class UnitScroll extends Scroll {
 	
 	private int initPower;
 	private int initToughness;
-	private int delay;
+	private int initDelay;
 	
-	public UnitScroll(int cost, int initPower, int initToughness, int delay) {
+	public UnitScroll(int cost, int initPower, int initToughness, int initDelay) {
 		super(cost);
 		this.initPower = initPower;
 		this.initToughness = initToughness;
-		this.delay = delay;
+		this.initDelay = initDelay;
 	}
 	
 	public Unit asUnit(int x, int y) {
 		Unit unit = new Unit();
-		unit.x = x;
-		unit.y = y;
-		unit.power = getInitPower();
-		unit.health = getInitToughness();
+		unit.setX(x);
+		unit.setY(y);
+		unit.setPower(getInitPower());
+		unit.setHealth(getInitToughness());
 		
 		return unit;
 	}
@@ -55,7 +55,7 @@ public class UnitScroll extends Scroll {
 	}
 	
 	public int getDelay() {
-		return delay;
+		return initDelay;
 	}
 
 	@Override
