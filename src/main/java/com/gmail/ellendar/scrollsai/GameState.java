@@ -116,7 +116,15 @@ public class GameState {
 		for(int y = 0; y < 5; y++) {
 			for(int x = 0; x < 3; x++) {
 				Unit unit = ourGrid[x][y];
-				if()
+				if(unit == null) {
+					sb.append("     ");
+				}
+				else {
+					sb.append(unit);
+				}
+				if(x != 2) {
+					sb.append(" | ");
+				}
 			}
 		}
 	}
