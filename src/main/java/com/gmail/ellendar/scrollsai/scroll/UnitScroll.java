@@ -17,7 +17,7 @@ public class UnitScroll extends Scroll {
 	private int initToughness;
 	private int initDelay;
 	
-	public UnitScroll(int cost, int initPower, int initToughness, int initDelay) {
+	public UnitScroll(int cost, int initPower, int initDelay, int initToughness) {
 		super(cost);
 		this.initPower = initPower;
 		this.initToughness = initToughness;
@@ -30,6 +30,7 @@ public class UnitScroll extends Scroll {
 		unit.setY(y);
 		unit.setPower(getInitPower());
 		unit.setHealth(getInitToughness());
+		unit.setInitialAttackDelay(initDelay);
 		
 		return unit;
 	}
@@ -41,9 +42,11 @@ public class UnitScroll extends Scroll {
 
 	@Override
 	public void takeEffect(GameState state, int targetX, int targetY) {
-		if(state.getOurGrid()[targetX][targetX] != null) {
+		if(state.getOurGrid()[targetX][targetY] != null) {
 			throw new GameStateViolationException("Unable to play unit scroll at coordinates occupied by another scroll");
 		}
+		state.getOurGrid()[targetX][targetY] = asUnit(targetX, targetY);
+		
 	}
 
 	public int getInitPower() {
@@ -73,4 +76,8 @@ public class UnitScroll extends Scroll {
 		return true;
 	}
 	
+	@Override
+	public String toString() {
+		return "(" + "Unit" + ": (" + cost + ") " + initPower + "/" + initDelay + "/" + initToughness + ")";
+	}
 }

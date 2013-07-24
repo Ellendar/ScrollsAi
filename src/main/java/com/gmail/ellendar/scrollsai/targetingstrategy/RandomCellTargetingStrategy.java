@@ -53,6 +53,9 @@ public class RandomCellTargetingStrategy implements TargetingStrategy {
 			}
 		}
 		
+		if(candidates.isEmpty()) {
+			return null;
+		}
 		return candidates.get(random.nextInt(candidates.size()));
 	}
 

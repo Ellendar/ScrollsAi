@@ -22,6 +22,11 @@ public class Sacrifice {
 	public Scroll getScroll() {
 		return scroll;
 	}
+	
+	@Override
+	public String toString() {
+		return "Type:" + type + " Scroll:" + scroll;
+	}
 
 }
 

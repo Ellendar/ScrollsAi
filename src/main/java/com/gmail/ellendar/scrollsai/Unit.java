@@ -10,6 +10,15 @@ public class Unit {
 	
 	public Unit() {
 	}
+	
+	public Unit(int power, int attackDelay, int health, int x, int y) {
+		this.power = power;
+		this.health = health;
+		this.initialAttackDelay = attackDelay;
+		this.attackDelay = attackDelay;
+		this.x = x;
+		this.y = y;
+	}
 
 	public int getPower() {
 		return power;

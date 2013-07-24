@@ -28,7 +28,7 @@ public class GreedyPlaySelectionStrategy implements PlaySelectionStrategy {
 			}
 		});
 		
-		int remainingMana = state.getMaxMana();
+		int remainingMana = state.getRemainingMana();
 		for(Scroll scroll : hand) {
 			//if we can cast the scroll
 			if(scroll.getCost() <= remainingMana) {
