@@ -41,4 +41,9 @@ public abstract class Scroll {
 	 */
 	public abstract void takeEffect(GameState state, int targetX, int targetY);
 	
+	@Override
+	public String toString() {
+		return "(" + (isUnit() ? "Unit" : "Spell") + ":" + cost + ")";
+	}
+	
 }
