@@ -21,7 +21,7 @@ public class GameState {
 	
 	private BufferedImage screen;
 	
-	private static final int SCROLLS_MONITOR_CENTER_X = 2500;
+	private static final int SCROLLS_MONITOR_CENTER_X = 800;
 	
 	private static final int SCREEN_WIDTH = 1440;
 	private static final int SCREEN_HEIGHT = 900;

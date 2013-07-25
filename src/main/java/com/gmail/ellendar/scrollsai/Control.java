@@ -2,6 +2,7 @@ package com.gmail.ellendar.scrollsai;
 
 import java.awt.AWTException;
 import java.awt.Frame;
+import java.awt.GraphicsEnvironment;
 import java.awt.Robot;
 
 import org.slf4j.Logger;
@@ -15,7 +16,7 @@ public class Control {
 	
 	static {
 		try {
-			robot = new Robot();
+			robot = new Robot(GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()[1]);
 		} catch (AWTException e) {
 			throw new RuntimeException();
 		}
