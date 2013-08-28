@@ -1,10 +1,9 @@
 package com.gmail.ellendar.scrollsai;
 
-import java.awt.Image;
 import java.awt.Rectangle;
-import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +18,20 @@ public class GameState {
 	private int maxMana;
 	private int remainingMana;
 	
+	private boolean isOurTurn;
+	
 	private BufferedImage screen;
 	
 	private static final int SCROLLS_MONITOR_CENTER_X = 800;
 	
 	private static final int SCREEN_WIDTH = 1440;
 	private static final int SCREEN_HEIGHT = 900;
+	
+	private Point screenOffset;
+	
+	private boolean gameOver;
+	
+	private final ScreenParser parser = new ScreenParser();
 	
 	//grid, offset
 	//since the grid is small and not radially symmetric i'm going to be lazy and use
@@ -33,19 +40,23 @@ public class GameState {
 	private Unit[][] ourGrid;
 	
 	//185/209/234
-	private int WINDOW_COLOR = 0xB9D1EA00;
+	private int WINDOW_COLOR = 0xB9D1EA;
+	
+	//215/228/242
+	private int INACTIVE_WINDOW_COLOR = 0xD7E4F2;
 	
 	//their grid is indexed with inverted-x (0,2 is the upper left corner)
 	//this allows us to use AI logic on both sides and preserve lane X-position meaning
 	private Unit[][] theirGrid;
 	private List<Scroll> hand;
-	
+
 	public GameState() {
 		ourRelics = new int[5];
 		theirRelics = new int[5];
 		ourGrid = new Unit[3][5];
 		theirGrid = new Unit[3][5];
 		hand = new ArrayList<Scroll>();
+		gameOver = false;
 	}
 	
 	public int[] getOurRelics() {
@@ -67,11 +78,14 @@ public class GameState {
 	}
 	
 	public boolean isGameOver() {
-		//TODO: Real implementation
-		return false;
+		return gameOver;
+	}
+	
+	public void setGameOver(boolean gameOver) {
+		this.gameOver = gameOver;
 	}
 
-	public Image getScreen() {
+	public BufferedImage getScreen() {
 		return screen;
 	}
 
@@ -107,9 +121,8 @@ public class GameState {
 		//draw down from top center until you see the window color.
 		for(int y = 0; y < 500; y++) {
 			//strip alpha for comparison
-			int rgb = screen.getRGB(SCROLLS_MONITOR_CENTER_X, y) & 0xFFFFFF00;
-			
-			if(rgb == WINDOW_COLOR) {
+			int rgb = screen.getRGB(SCROLLS_MONITOR_CENTER_X, y) & 0x00FFFFFF;
+			if(rgb == WINDOW_COLOR || rgb == INACTIVE_WINDOW_COLOR) {
 				windowTopEncountered = true;
 			}
 			else if(windowTopEncountered) {
@@ -119,23 +132,23 @@ public class GameState {
 		}
 		
 		for(int x = SCROLLS_MONITOR_CENTER_X; x > 0; x--) {
-			int rgb = screen.getRGB(x, screenStartY) & 0xFFFFFF00;
+			int rgb = screen.getRGB(x, screenStartY) & 0x00FFFFFF;
 			
-			if(rgb == WINDOW_COLOR) {
+			if(rgb == WINDOW_COLOR || rgb == INACTIVE_WINDOW_COLOR) {
 				screenStartX = x+1;
 			}
 		}
 		
+		screenOffset = new Point(screenStartX, screenStartY);
 		screen = screen.getSubimage(screenStartX, screenStartY, SCREEN_WIDTH, SCREEN_HEIGHT);
+		
+		ImageUtil.saveImage(screen, new File("C:\\debug\\screen.png"));
 	}
 	
 	public void update() {
 		captureScreen();
-	
-		//read whether it's our turn
-		//read our hand
-		//read our grid
-		//read their grid
+
+		parser.parse(this);
 	}
 	
 	
@@ -155,6 +168,8 @@ public class GameState {
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
+		
+		sb.append("\n");
 		
 		for(int y = 0; y < 5; y++) {
 			sb.append(ourRelics[y] + "| ");
@@ -201,7 +216,7 @@ public class GameState {
 			sb.append(" |" + theirRelics[y]);
 			if(y != 4) {
 				sb.append('\n');
-				sb.append("-------------------------------------------------\n");
+				sb.append("----------------------------------------------------------------\n");
 			}
 		}
 		sb.append("\nMana: " + remainingMana + '/' + maxMana + "\n"); 
@@ -214,4 +229,26 @@ public class GameState {
 		
 		return sb.toString();
 	}
+
+	public boolean isOurTurn() {
+		return isOurTurn;
+	}
+
+	public void setOurTurn(boolean isOurTurn) {
+		this.isOurTurn = isOurTurn;
+	}
+	
+	public void setHand(List<Scroll> hand) {
+		this.hand = hand;
+	}
+
+	public Point getScreenOffset() {
+		return screenOffset;
+	}
+
+	public void setScreenOffset(Point screenOffset) {
+		this.screenOffset = screenOffset;
+	}
+	
+	
 }

@@ -12,7 +12,7 @@ import com.gmail.ellendar.scrollsai.scroll.UnitScroll;
 public class GameLoopTests {
 	
 	@Test
-	public void testGameLoop() {
+	public void testDummyGameLoop() {
 		
 		Random random = new Random();
 		GameState state = new GameState();
@@ -29,5 +29,16 @@ public class GameLoopTests {
 			int rand = random.nextInt(7) + 1;
 			state.getHand().add(new UnitScroll(rand, rand, 2, rand));
 		}
+	}
+	
+	@Test
+	public void testGameLoop() {
+		GameState state = new GameState();
+		state.captureScreen();
+		state.update();
+		
+		ScrollsAI.gameLoop(state);
+		
+		System.out.println(state);
 	}
 }

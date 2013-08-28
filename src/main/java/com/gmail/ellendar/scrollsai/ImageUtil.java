@@ -2,6 +2,10 @@ package com.gmail.ellendar.scrollsai;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class ImageUtil {
 	public static final int BLACK = Color.BLACK.getRGB();
@@ -11,7 +15,7 @@ public class ImageUtil {
 	private static final double GREEN_WEIGHTING = .59;
 	private static final double BLUE_WEIGHTING = .11;
 
-	private static final int DEFAULT_LUMINOSITY_THRESHOLD = 110;
+	private static final int DEFAULT_LUMINOSITY_THRESHOLD = 50;
 	
 	public static BufferedImage convertToMonochrome(BufferedImage image) {
 		return convertToMonochrome(image, DEFAULT_LUMINOSITY_THRESHOLD);
@@ -35,5 +39,32 @@ public class ImageUtil {
 		return image;
 	}
 	
+	public static void saveImage(BufferedImage image, File file) {
+	    try {
+			ImageIO.write(image, "png", file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	
+	public static void saveImage(BufferedImage image, String file) {
+	    try {
+			ImageIO.write(image, "png", new File(file));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static BufferedImage readImage(File file) {
+	    try {
+			return ImageIO.read(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    return null;
+	}
+	
+	public static String asRGB(int rgb) {
+		return ((rgb >> 16) & 0xFF) + " / " + ((rgb >> 8) & 0xFF) + " / " + (rgb & 0xFF);
+	}
 }

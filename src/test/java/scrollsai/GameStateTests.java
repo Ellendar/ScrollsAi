@@ -1,10 +1,16 @@
 package scrollsai;
 
+import java.io.File;
+
+import junit.framework.Assert;
+
 import org.junit.Test;
 
 import com.gmail.ellendar.scrollsai.GameState;
+import com.gmail.ellendar.scrollsai.ImageUtil;
 import com.gmail.ellendar.scrollsai.Unit;
 
+import static org.junit.Assert.*;
 public class GameStateTests {
 	
 	@Test
@@ -29,5 +35,23 @@ public class GameStateTests {
 		GameState state = new GameState();
 		
 		state.captureScreen();
+		
+		ImageUtil.saveImage(state.getScreen(), new File("C:\\Debug\\1cards.png"));
+	}
+	
+	@Test
+	public void testUpdateState() {
+		GameState state = new GameState();
+		
+		state.update();
+	}
+	
+	@Test
+	public void testGameOver() {
+		GameState state = new GameState();
+		
+		state.update();
+		
+		assertTrue(state.isGameOver());
 	}
 }

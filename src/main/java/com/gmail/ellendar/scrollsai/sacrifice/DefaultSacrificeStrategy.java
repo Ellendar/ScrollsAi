@@ -36,6 +36,9 @@ public class DefaultSacrificeStrategy implements SacrificeStrategy {
 		if(hand.size() == 0) {
 			return new Sacrifice(Type.SKIP, null);
 		}
+		else if(hand.size() > 5) {
+			type = Type.RAMP;
+		}
 		else if(hand.size() == 1) {
 			type = Type.DRAW;
 		}

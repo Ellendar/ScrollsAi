@@ -35,7 +35,8 @@ public class GreedyPlaySelectionStrategy implements PlaySelectionStrategy {
 				//if the scroll has a legal targret
 				if(!scroll.isTargeted() || scroll.getTarget(state) != null) {
 					plays.add(scroll);
-					remainingMana -= scroll.getCost();
+					state.setRemainingMana(remainingMana - scroll.getCost());
+					return plays;
 				}
 			}
 		}

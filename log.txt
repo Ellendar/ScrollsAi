@@ -1,0 +1,7 @@
+2013-08-11 19:58:20,008 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
+2013-08-11 19:58:20,009 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (617,437)
+2013-08-11 19:58:20,809 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (802,467)
+2013-08-11 19:58:21,909 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (602,427)
+2013-08-11 19:58:32,509 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1092,317)
+2013-08-11 19:58:33,357 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
+2013-08-11 19:58:33,593 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
