@@ -1,7 +1,303 @@
-2013-08-11 19:58:20,008 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
-2013-08-11 19:58:20,009 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (617,437)
-2013-08-11 19:58:20,809 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (802,467)
-2013-08-11 19:58:21,909 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (602,427)
-2013-08-11 19:58:32,509 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1092,317)
-2013-08-11 19:58:33,357 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
-2013-08-11 19:58:33,593 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
+2013-08-28 19:47:56,971 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
+2013-08-28 19:47:56,973 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (632,430)
+2013-08-28 19:47:57,773 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (817,460)
+2013-08-28 19:47:58,873 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (617,420)
+2013-08-28 19:48:09,473 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:48:10,366 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 5
+2013-08-28 19:48:10,747 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 5
+2013-08-28 19:48:10,793 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 1
+2013-08-28 19:48:17,073 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 5
+2013-08-28 19:48:17,107 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (7) 7/2/7)(RAMP)
+2013-08-28 19:48:17,107 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (7) 7/2/7) at index 3
+2013-08-28 19:48:17,107 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (983,820)
+2013-08-28 19:48:17,707 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (953,700)
+2013-08-28 19:48:18,307 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificed for resourcees. Mana is now at 1
+2013-08-28 19:48:21,586 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:21,616 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (0/1)(Unit: (1) 1/2/1)
+2013-08-28 19:48:21,617 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 2
+2013-08-28 19:48:21,617 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (899,820)
+2013-08-28 19:48:22,717 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (899,623)
+2013-08-28 19:48:23,517 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:48:24,317 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 2
+2013-08-28 19:48:24,317 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (899,820)
+2013-08-28 19:48:25,117 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (2,1)
+2013-08-28 19:48:25,117 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (682,379)
+2013-08-28 19:48:25,917 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:48:32,814 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:32,841 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:48:33,441 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+Mana: 0/1
+Hand: (Unit: (3) 3/2/3)(Unit: (2) 2/2/2)(Unit: (5) 5/2/5)(Unit: (2) 2/2/2)
+
+2013-08-28 19:48:34,719 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:36,010 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 6
+2013-08-28 19:48:37,328 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:38,628 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:39,929 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:41,229 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:42,529 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:42,553 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 2
+2013-08-28 19:48:48,834 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 5
+2013-08-28 19:48:48,865 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (4) 4/2/4)(RAMP)
+2013-08-28 19:48:48,865 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (4) 4/2/4) at index 4
+2013-08-28 19:48:48,865 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1149,820)
+2013-08-28 19:48:49,467 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1119,700)
+2013-08-28 19:48:50,067 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificed for resourcees. Mana is now at 2
+2013-08-28 19:48:53,345 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:48:53,369 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (0/2)(Unit: (2) 2/2/2)
+2013-08-28 19:48:53,369 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (2) 2/2/2) at index 1
+2013-08-28 19:48:53,369 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (732,820)
+2013-08-28 19:48:54,469 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (732,623)
+2013-08-28 19:48:55,269 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:48:56,069 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (2) 2/2/2) at index 1
+2013-08-28 19:48:56,069 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (732,820)
+2013-08-28 19:48:56,869 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (1,0)
+2013-08-28 19:48:56,869 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (632,310)
+2013-08-28 19:48:57,669 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:49:04,545 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:49:04,564 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:49:05,164 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       | 1/2/1 ||       |       |          |0
+Mana: 0/2
+Hand: (Unit: (3) 3/2/3)(Unit: (5) 5/2/5)(Unit: (1) 1/2/1)
+
+2013-08-28 19:49:06,462 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:49:07,754 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:49:07,772 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 3
+2013-08-28 19:49:14,040 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:49:14,068 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (5) 5/2/5)(RAMP)
+2013-08-28 19:49:14,068 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (5) 5/2/5) at index 1
+2013-08-28 19:49:14,068 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (732,820)
+2013-08-28 19:49:14,668 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (702,700)
+2013-08-28 19:49:15,268 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificed for resourcees. Mana is now at 3
+2013-08-28 19:49:18,538 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:49:18,556 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (0/3)(Unit: (3) 3/2/3)
+2013-08-28 19:49:18,556 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (3) 3/2/3) at index 0
+2013-08-28 19:49:18,556 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,820)
+2013-08-28 19:49:19,657 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,623)
+2013-08-28 19:49:20,457 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:49:21,258 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (3) 3/2/3) at index 0
+2013-08-28 19:49:21,258 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,820)
+2013-08-28 19:49:22,058 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (1,4)
+2013-08-28 19:49:22,058 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (601,622)
+2013-08-28 19:49:22,859 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:49:29,725 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:49:29,737 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:49:30,337 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          | 1/2/1 | 1/2/1 ||       |       |          |0
+Mana: 0/3
+Hand: (Unit: (2) 2/2/2)(Unit: (1) 1/2/1)
+
+2013-08-28 19:49:31,608 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:49:32,880 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:49:34,165 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:49:35,452 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:49:36,740 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:49:36,752 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 4
+2013-08-28 19:49:43,024 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:49:43,042 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (1) 1/2/1)(DRAW)
+2013-08-28 19:49:43,042 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 2
+2013-08-28 19:49:43,042 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (984,820)
+2013-08-28 19:49:43,642 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1014,700)
+2013-08-28 19:49:47,528 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:49:47,552 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (1/3)(Unit: (2) 2/2/2)
+2013-08-28 19:49:47,552 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (2) 2/2/2) at index 0
+2013-08-28 19:49:47,552 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (565,820)
+2013-08-28 19:49:48,652 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (565,623)
+2013-08-28 19:49:49,452 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:49:50,252 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (2) 2/2/2) at index 0
+2013-08-28 19:49:50,252 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (565,820)
+2013-08-28 19:49:51,052 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (1,1)
+2013-08-28 19:49:51,052 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (562,380)
+2013-08-28 19:49:51,852 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:49:58,717 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:49:58,735 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Additional play strategy established (0/3)(Unit: (1) 1/2/1)
+2013-08-28 19:49:58,735 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:49:58,735 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,820)
+2013-08-28 19:49:59,835 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,623)
+2013-08-28 19:50:00,635 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:01,435 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:01,435 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,820)
+2013-08-28 19:50:02,235 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (2,3)
+2013-08-28 19:50:02,235 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (672,535)
+2013-08-28 19:50:03,035 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:09,901 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:09,919 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:50:10,519 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       | 1/2/1 |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          | 1/2/1 | 1/2/1 ||       |       |          |0
+Mana: 0/3
+Hand: (Unit: (1) 1/2/1)(Unit: (4) 4/2/4)(Unit: (5) 5/2/5)
+
+2013-08-28 19:50:11,785 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:13,068 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:14,337 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:15,615 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:16,902 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:18,184 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:18,202 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 5
+2013-08-28 19:50:24,459 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 4
+2013-08-28 19:50:24,499 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (1) 1/2/1)(RAMP)
+2013-08-28 19:50:24,499 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:24,499 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (565,820)
+2013-08-28 19:50:25,099 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (535,700)
+2013-08-28 19:50:25,700 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificed for resourcees. Mana is now at 4
+2013-08-28 19:50:28,958 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:50:28,979 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (3/4)(Unit: (1) 1/2/1)
+2013-08-28 19:50:28,979 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:28,979 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,820)
+2013-08-28 19:50:30,079 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,623)
+2013-08-28 19:50:30,879 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:31,679 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:31,679 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (649,820)
+2013-08-28 19:50:32,479 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (1,0)
+2013-08-28 19:50:32,479 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (632,310)
+2013-08-28 19:50:33,280 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:40,142 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:50:40,158 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Additional play strategy established (2/4)(Unit: (1) 1/2/1)
+2013-08-28 19:50:40,158 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:40,158 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:50:41,259 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,623)
+2013-08-28 19:50:42,059 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:42,859 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:42,859 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:50:43,659 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (1,3)
+2013-08-28 19:50:43,659 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (542,532)
+2013-08-28 19:50:44,459 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:51,324 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:50:51,336 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Additional play strategy established (1/4)(Unit: (1) 1/2/1)
+2013-08-28 19:50:51,336 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:51,336 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:50:52,436 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,623)
+2013-08-28 19:50:53,236 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:50:54,036 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:50:54,036 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:50:54,836 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (0,3)
+2013-08-28 19:50:54,836 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (420,535)
+2013-08-28 19:50:55,636 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:51:02,492 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:02,504 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Additional play strategy established (0/4)(Unit: (1) 1/2/1)
+2013-08-28 19:51:02,504 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:51:02,504 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:51:03,604 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,623)
+2013-08-28 19:51:04,404 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:51:05,205 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:51:05,205 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:51:06,005 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (1,2)
+2013-08-28 19:51:06,005 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (617,452)
+2013-08-28 19:51:06,805 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:51:13,663 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:13,675 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:51:14,275 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          | 1/2/1 |       ||       |       |          |0
+----------------------------------------------------------------
+0|       | 1/2/1 |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          | 1/2/1 | 1/2/1 ||       |       |          |0
+Mana: 0/4
+Hand: (Unit: (1) 1/2/1)(Unit: (1) 1/2/1)
+
+2013-08-28 19:51:15,530 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:16,802 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:18,082 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:19,341 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:20,629 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:21,902 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:23,172 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:24,441 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:24,454 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 6
+2013-08-28 19:51:30,710 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 3
+2013-08-28 19:51:30,729 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (1) 1/2/1)(RAMP)
+2013-08-28 19:51:30,729 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 1
+2013-08-28 19:51:30,729 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (816,820)
+2013-08-28 19:51:31,330 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (786,700)
+2013-08-28 19:51:31,930 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificed for resourcees. Mana is now at 5
+2013-08-28 19:51:35,186 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:35,198 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (2/5)(Unit: (3) 3/2/3)
+2013-08-28 19:51:35,198 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (3) 3/2/3) at index 1
+2013-08-28 19:51:35,198 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (900,820)
+2013-08-28 19:51:36,299 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (900,623)
+2013-08-28 19:51:37,099 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:51:37,899 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (3) 3/2/3) at index 1
+2013-08-28 19:51:37,899 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (900,820)
+2013-08-28 19:51:38,702 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking our grid: (2,3)
+2013-08-28 19:51:38,702 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (672,535)
+2013-08-28 19:51:39,502 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (1107,310)
+2013-08-28 19:51:46,381 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 1
+2013-08-28 19:51:46,388 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:51:46,989 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          | 1/2/1 |       ||       |       |          |0
+----------------------------------------------------------------
+0|       | 1/2/1 |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       | 1/2/1    ||          |       |       |0
+----------------------------------------------------------------
+0|          | 1/2/1 | 1/2/1 ||       |       |          |0
+Mana: 2/5
+Hand: (Unit: (3) 3/2/3)
+
+2013-08-28 19:51:48,245 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 1
+2013-08-28 19:51:49,517 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 1
+2013-08-28 19:51:50,786 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 1
+2013-08-28 19:51:52,059 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 1
+2013-08-28 19:51:52,065 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Starting turn: 7
+2013-08-28 19:51:58,324 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 2
+2013-08-28 19:51:58,336 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Sacrificing scroll: (Unit: (1) 1/2/1)(DRAW)
+2013-08-28 19:51:58,337 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking scroll (Unit: (1) 1/2/1) at index 0
+2013-08-28 19:51:58,337 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (795,820)
+2013-08-28 19:51:58,937 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (825,700)
+2013-08-28 19:52:02,759 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0
+2013-08-28 19:52:02,759 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - Initial play strategy established (5/5)none
+2013-08-28 19:52:02,759 [main] INFO  com.gmail.ellendar.scrollsai.Control  - Clicking absolute coordinate: (279,855)
+2013-08-28 19:52:03,360 [main] INFO  com.gmail.ellendar.scrollsai.scroll.Scroll  - 
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+----------------------------------------------------------------
+0|       |       |          ||          |       |       |0
+----------------------------------------------------------------
+0|          |       |       ||       |       |          |0
+Mana: 5/5
+Hand: 
+
+2013-08-28 19:52:04,571 [main] INFO  com.gmail.ellendar.scrollsai.ScreenParser  - Card count: 0

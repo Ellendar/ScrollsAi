@@ -50,6 +50,7 @@ public class Control {
 	
 	static {
 		try {
+			//this is the magic number to get the correct monitor
 			robot = new Robot(GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()[0]);
 		} catch (AWTException e) {
 			throw new RuntimeException();
