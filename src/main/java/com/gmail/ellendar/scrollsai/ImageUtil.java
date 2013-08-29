@@ -3,7 +3,9 @@ package com.gmail.ellendar.scrollsai;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
@@ -55,13 +57,18 @@ public class ImageUtil {
 		}
 	}
 	
-	public static BufferedImage readImage(File file) {
-	    try {
-			return ImageIO.read(file);
-		} catch (IOException e) {
+	public static BufferedImage readImageResource(String url) {
+		try {
+			InputStream in = ImageUtil.class.getClassLoader().getResourceAsStream(url);
+			if(in == null)
+				in = new FileInputStream(url);
+			return ImageIO.read(in);
+		}
+		catch(IOException e) {
 			e.printStackTrace();
 		}
-	    return null;
+		
+		return null;
 	}
 	
 	public static String asRGB(int rgb) {

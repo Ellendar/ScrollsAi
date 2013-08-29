@@ -142,7 +142,7 @@ public class GameState {
 		screenOffset = new Point(screenStartX, screenStartY);
 		screen = screen.getSubimage(screenStartX, screenStartY, SCREEN_WIDTH, SCREEN_HEIGHT);
 		
-		ImageUtil.saveImage(screen, new File("C:\\debug\\screen.png"));
+		//ImageUtil.saveImage(screen, new File("C:\\debug\\screen.png"));
 	}
 	
 	public void update() {

@@ -59,7 +59,7 @@ public class ScreenParser {
 		//initialize the training set
 		numberMaps = new PixelMap[7];
 		
-		BufferedImage trainingImage = ImageUtil.readImage(new File("C:\\Debug\\costs_training.png"));
+		BufferedImage trainingImage = ImageUtil.readImageResource("costs_training.png");
 		
 		for(int i = 0; i < 7; ++i) {
 			boolean[][] pixels = new boolean[11][16];

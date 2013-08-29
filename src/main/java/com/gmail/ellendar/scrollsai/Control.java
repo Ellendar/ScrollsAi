@@ -125,10 +125,11 @@ public class Control {
 		click(state.getScreenOffset().x + point.x, state.getScreenOffset().y + point.y);
 	}
 	
+	// all debug waits
 	public static void click(int x, int y) {
 		logger.info("Clicking absolute coordinate: (" + x + "," + y + ")" );
 		robot.mouseMove(x, y);
-		wait(100);
+		wait(100); 
 		robot.mousePress(InputEvent.BUTTON1_MASK);
 		wait(100);
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
@@ -154,13 +155,14 @@ public class Control {
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 	}
 	
+	// load bearing waits
 	public static void startGame(GameState state) {
 		click(state, 540, 370);
 		wait(200);
 		click(state, 725, 400);
 		wait(500);
 		click(state, 525, 360);
-		wait(10000);
+		wait(10000); //could be replaced with detection of main menu
 	}
 	
 	public static void leaveMatch(GameState state) {
@@ -168,6 +170,7 @@ public class Control {
 		wait(5000);
 	}
 	
+	// load bearing waits
 	public static void surrender(GameState state) {
 		click(state, 5, 5);
 		wait(500);
@@ -176,6 +179,6 @@ public class Control {
 		click(state, 718, 315);
 		wait(5000);
 		leaveMatch(state);
-		wait(10000);
+		wait(10000); //could be replaced with detection of main menu
 	}
 }
