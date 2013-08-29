@@ -16,6 +16,8 @@ import com.gmail.ellendar.scrollsai.sacrifice.Sacrifice;
 import com.gmail.ellendar.scrollsai.sacrifice.SacrificeStrategy;
 import com.gmail.ellendar.scrollsai.scroll.Scroll;
 import com.gmail.ellendar.scrollsai.scroll.UnitScroll;
+import com.gmail.ellendar.scrollsai.ui.PausePoint;
+import com.gmail.ellendar.scrollsai.ui.console.GuiConsole;
 
 public class ScrollsAI {
 	
@@ -61,6 +63,14 @@ public class ScrollsAI {
 	}
 	
 	public static void gameLoop(GameState state) {
+		// wait for pause control
+		try {
+			PausePoint.check();
+		} 
+		catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		//determine boardstate
 		state.update();
 		

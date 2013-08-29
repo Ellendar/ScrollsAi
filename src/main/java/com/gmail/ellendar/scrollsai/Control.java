@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import com.gmail.ellendar.ImpossibleException;
 import com.gmail.ellendar.scrollsai.sacrifice.Sacrifice;
 import com.gmail.ellendar.scrollsai.scroll.Scroll;
+import com.gmail.ellendar.scrollsai.ui.PausePoint;
 
 public class Control {
 	
@@ -127,15 +128,17 @@ public class Control {
 	
 	// all debug waits
 	public static void click(int x, int y) {
+		try {
+			PausePoint.check();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		logger.info("Clicking absolute coordinate: (" + x + "," + y + ")" );
 		robot.mouseMove(x, y);
-		wait(100); 
 		robot.mousePress(InputEvent.BUTTON1_MASK);
-		wait(100);
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
-		wait(100);
 		robot.mouseMove(0, 0);
-		wait(300);
 	}
 	
 	public static void wait(int duration) {
