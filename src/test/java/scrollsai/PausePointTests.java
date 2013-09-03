@@ -1,6 +1,7 @@
 package scrollsai;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 
 import com.gmail.ellendar.scrollsai.ui.PausePoint;
@@ -32,7 +33,7 @@ public class PausePointTests {
 					assertTrue(end - start >= 1000);
 					
 				} catch (InterruptedException e) {
-					throw new AssertionError("pause point interrupted", e);
+					throw new AssertionError("pause point interrupted");
 				}
 			}
 		});
@@ -45,7 +46,7 @@ public class PausePointTests {
 						wait(1000);
 					}
 				} catch (InterruptedException e) {
-					throw new AssertionError("wait for resume interrupted", e);
+					throw new AssertionError("wait for resume interrupted");
 				}
 				
 				PausePoint.resume();

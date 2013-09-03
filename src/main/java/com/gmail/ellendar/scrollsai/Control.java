@@ -64,6 +64,7 @@ public class Control {
 		logger.info("Sacrificing scroll: " + sacrifice.getScroll() + "(" + sacrifice.getType() + ")");
 		
 		clickScroll(state, sacrifice.getScroll());
+		wait(1000);
 		
 		int x = handXCoordinatesByHandSize.get(state.getHand().size()).get(state.getHand().indexOf(sacrifice.getScroll()));
 		
@@ -81,6 +82,7 @@ public class Control {
 				throw new ImpossibleException("Invalid sacrifice type.");
 				
 		}
+		wait(200);
 	}
 	
 	public static void clickOurGrid(GameState state, int x, int y) {
@@ -136,8 +138,13 @@ public class Control {
 		
 		logger.info("Clicking absolute coordinate: (" + x + "," + y + ")" );
 		robot.mouseMove(x, y);
+		//debugging wait, so we can see where the mouse is moving
+		wait(100);
 		robot.mousePress(InputEvent.BUTTON1_MASK);
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
+		//some clicks won't read properly without a small delay before moving the mouse off.
+		//removing this wait WILL break the bot
+		wait(50);
 		robot.mouseMove(0, 0);
 	}
 	
